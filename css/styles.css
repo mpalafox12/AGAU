@@ -1,0 +1,118 @@
+@import url('https://use.typekit.net/xgy1qym.css');
+
+:root {
+    --amarillo: #e7e513;
+    --gris-oscuro: #353535;
+    --gris-claro: #c5c4c4;
+    --fondo-claro: #fbfcf4;
+
+    --font-titulos: "antarctican-mono", sans-serif;
+    --font-cuerpo: "early-sans-variable", sans-serif;
+
+    --font-size: 1.2rem;
+    --font-size-h1: 5rem;
+    --font-size-h2: 4rem;
+    --font-size-h3: 2rem;
+
+}
+
+body { 
+    
+    background-color: var(--fondo-claro);
+    color: var(--gris-oscuro);
+    font-family: var(--font-cuerpo);
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: var(--font-titulos);
+    color: var(--gris-oscuro);
+    font-size: var(--font-size);
+    line-height: 1;
+}
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.logo svg {
+  display: block;
+  width: 180px;
+  height: auto;
+  margin: 0;
+}
+
+.menu {
+  position: absolute;
+  left: 50px;
+  top: 10%;
+  transform: translateY(-50%);
+  margin: 0;
+  font-size: 20px;
+}
+
+.contactanos {
+  position: absolute;
+  right: 50px;
+  top: 10%;
+  transform: translateY(-50%);
+  margin: 0;
+  font-size: 20px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.portada {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 150px);
+}
+
+/* TEXTO AMARILLO */
+
+.texto-amarillo {
+  position: absolute;
+  top: 0;
+  right: 30px;
+
+  text-align: right;
+  color: #E0E500;
+
+  font-family: var(--font-titulos);
+  font-size: clamp(40px, 6vw, 95px);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.texto-amarillo p {
+  margin: 0;
+}
+
+/* TEXTO GRIS GRANDE */
+
+.title-container {
+  position: absolute;
+  bottom: 40px;
+  left: 4%;
+  width: 92%;
+
+  color: #333333;
+  font-weight: 900;
+}
+
+h1 {
+font-family: var(--font-cuerpo);
+  font-size: clamp(45px, 11vw, 180px);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  margin: 0;
+  white-space: nowrap;
+}
