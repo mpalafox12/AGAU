@@ -1,4 +1,9 @@
 @import url('https://use.typekit.net/xgy1qym.css');
+@font-face {
+  font-family: "AGAU";
+  src: url("./AGAU-Regular.woff2") format("woff2");
+  font-display: swap;
+}
 
 :root {
     --amarillo: #e7e513;
@@ -7,7 +12,7 @@
     --fondo-claro: #fbfcf4;
 
     --font-titulos: "antarctican-mono", sans-serif;
-    --font-cuerpo: "early-sans-variable", sans-serif;
+    --font-cuerpo: "AGAU", sans-serif;
 
     --font-size: 1.2rem;
     --font-size-h1: 5rem;
@@ -34,6 +39,7 @@ h1, h2 {
 }
 
 .encabezado {
+  font-family: var(--font-cuerpo);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,6 +56,7 @@ h1, h2 {
 }
 
 .menu {
+  font-family: var(--font-titulos);
   position: absolute;
   left: 50px;
   top: 10%;
@@ -87,7 +94,7 @@ h1, h2 {
 
   font-family: var(--font-titulos);
   font-size: clamp(40px, 6vw, 95px);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.05;
 }
 
