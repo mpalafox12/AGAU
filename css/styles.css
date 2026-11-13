@@ -1,9 +1,12 @@
 @import url('https://use.typekit.net/xgy1qym.css');
 @font-face {
-  font-family: "AGAU";
-  src: url("./AGAU-Regular.woff2") format("woff2");
-  font-display: swap;
+    font-family: "AGAU";
+    src: url("./AGAU-Regular.woff2") format("woff2");
+    font-display: swap;
 }
+
+
+/* VARIABLES GENERALES */
 
 :root {
     --amarillo: #e7e513;
@@ -18,11 +21,18 @@
     --font-size-h1: 5rem;
     --font-size-h2: 4rem;
     --font-size-h3: 2rem;
-
 }
 
-body { 
-    
+* {
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+html, body {
+  min-height: 100%;
+}
+
+body {
     background-color: var(--fondo-claro);
     color: var(--gris-oscuro);
     font-family: var(--font-cuerpo);
@@ -31,95 +41,102 @@ body {
     padding: 0;
 }
 
-h1, h2 {
-    font-family: var(--font-titulos);
-    color: var(--gris-oscuro);
-    font-size: var(--font-size);
-    line-height: 1;
+.encabezado {
+    font-family: var(--font-cuerpo);
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
 }
 
-.encabezado {
-  font-family: var(--font-cuerpo);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  margin-top: 50px;
-}
+
+/* LOGOTIPO */
 
 .logo svg {
-  display: block;
-  width: 180px;
-  height: auto;
-  margin: 0;
+    display: block;
+    width: 180px;
+    height: auto;
+    margin: 0;
 }
+
+
+/* MENÚ */
 
 .menu {
-  font-family: var(--font-titulos);
-  position: absolute;
-  left: 50px;
-  top: 10%;
-  transform: translateY(-50%);
-  margin: 0;
-  font-size: 20px;
+    margin: 0;
+    font-size: 20px;
 }
 
-.contactanos {
-  position: absolute;
-  right: 50px;
-  top: 10%;
-  transform: translateY(-50%);
-  margin: 0;
-  font-size: 20px;
-}
+
+/* CONTÁCTANOS */
+
+.contactanos {margin: 0;}
+
 
 /* CONTENEDOR PRINCIPAL */
 
-.portada {
-  position: relative;
-  width: 100%;
-  min-height: calc(100vh - 150px);
+main {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 150px);
 }
+
 
 /* TEXTO AMARILLO */
 
-.texto-amarillo {
-  position: absolute;
-  top: 0;
-  right: 30px;
+.texto-fondo-header {
+    position: absolute;
+    top: 0;
+    right: 30px;
 
-  text-align: right;
-  color: #E0E500;
+    text-align: right;
+    color: #E0E500;
 
-  font-family: var(--font-titulos);
-  font-size: clamp(40px, 6vw, 95px);
-  font-weight: 600;
-  line-height: 1.05;
+    font-family: var(--font-titulos);
+    font-size: clamp(40px, 6vw, 95px);
+    font-weight: 600;
+    line-height: 1.05;
 }
 
-.texto-amarillo p {
-  margin: 0;
+.texto-fondo-header p {
+    margin: 0;
 }
+
 
 /* TEXTO GRIS GRANDE */
 
-.title-container {
-  position: absolute;
-  bottom: 40px;
-  left: 4%;
-  width: 92%;
+.texto-principal-header {
+  position: relative;
+    left: 5%;
+    width: 95%;
 
-  color: #333333;
-  font-weight: 900;
+    color: #333333;
+    font-weight: 600;
 }
 
 h1 {
-font-family: var(--font-cuerpo);
-  font-size: clamp(45px, 11vw, 180px);
-  font-weight: 900;
-  line-height: 1.15;
-  letter-spacing: -0.04em;
-  margin: 0;
-  white-space: nowrap;
+    font-family: var(--font-cuerpo);
+    font-size: clamp(45px, 11vw, 1000px);
+    font-weight: 900;
+    line-height: 1.15;
+    letter-spacing: .02em;
+    margin: .5em 0 1em 0;
+    white-space: nowrap;
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--font-cuerpo);
+    font-size: clamp(30px, 6vw, 1000px);
+    font-weight: 900;
+    line-height: 1.15;
+    letter-spacing: .02em;
+    margin: 0;
+    white-space: nowrap;
+    text-align: center;
 }
